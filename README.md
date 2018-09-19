@@ -1,15 +1,37 @@
-# PyLadiesWorkshop
+# Python beginners workshop
 
-Meetup Page:   
-[https://www.meetup.com/de-DE/PyLadies-Berlin/events/243202510/](https://www.meetup.com/de-DE/PyLadies-Berlin/events/243202510/)
+A full day python beginners workshop that introduces basic python concepts, 
+in an interactive presentation and practicing them by building a text adventure. 
+In detail the concepts that are introduced are:
+* variables
+* printing
+* strings
+* arithmetic and boolean expressions
+* if-elif-else
+* comments and input
+* string formatting
+* lists
+* for loop
+* dictionaries
+* functions
+* libraries
 
-Blogpost with further Explanations:   
-[http://danke.fish/how-to-organise-a-python-beginners-workshop/](http://danke.fish/how-to-organise-a-python-beginners-workshop/)
-
-
-## Links for Installation Party:
+## Installation requirements
 
 See main article: [Installation Party](manual/installation_party.md).
+
+## Presentation
+[Workshop presentation](https://docs.google.com/presentation/d/1NIWjBqOPHquaL0X3gXUJojl1b3qsg5r3A1MgZlXUJh8/edit?usp=sharing).
+
+## Short exercises
+See main article: [Short exercises](tasks/short_exercises/README.md).
+
+## Text adventure tasks
+See main article: [Adventure](tasks/README.md).
+
+
+# How to organize
+[http://danke.fish/how-to-organise-a-python-beginners-workshop/](http://danke.fish/how-to-organise-a-python-beginners-workshop/)
 
 ## Recommended Learning Materials:
 
