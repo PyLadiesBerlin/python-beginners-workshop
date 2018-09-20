@@ -58,10 +58,10 @@ adventure = {
     # Exercise D
 }
 
-
-print("Which door do you choose" + '/'.join(adventure.keys()) + "?")  # join() is python method to make one string out of a list of things
-                                                                      # adventure.keys() is a list with all the dictionary keys, in that
-                                                                      # case is only door ['1']
+doors = '/'.join(adventure.keys())   # join() is python method to make one string out of a list of things
+                                     # adventure.keys() is a list with all the dictionary keys, in that
+                                     # case is only door ['1']
+print(f"Which door do you choose ({doors}) ?")
 
 door = input("> ")
 
