@@ -1,14 +1,16 @@
 # Installation Party
 
-We ask you to do three things:
+We ask you to do a few things:
 1. Install Python 3 interpreter, so that you can run your code.
 2. Install Pycharm - a powerful programming environment to make your programming efforts easier.
 3. Create an account on [github.com](github.com).
+4. Install git.
 
 ## Table of Contents
 * [Installing Python 3](#installing-python-3)
 * [Installing PyCharm](#installing-pycharm)
 * [Creating github account](#creating-github-account)
+* [Installing git](#installing-git)
 
 ## Installing Python 3
 Choose your operating system and follow the instructions:
@@ -182,3 +184,28 @@ To create an account on Github:
 
 ![Github](images/github.png "Github")
 
+## Installing Git
+
+### Windows
+
+There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to http://git-scm.com/download/win and the download will start automatically. 
+
+### Linux
+
+You can install Git through the package management tool that comes with your distribution. If you’re on Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS), you can use dnf:
+```
+$ sudo dnf install git-all
+```
+
+If you’re on a Debian-based distribution, such as Ubuntu, try apt:
+```
+$ sudo apt install git-all
+```
+
+
+### Mac OS X
+
+You can install Git with Homebrew:
+```
+brew install git
+```
