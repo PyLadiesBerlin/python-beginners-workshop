@@ -66,7 +66,9 @@ then something went wrong. Try again or search for support on our Slack.
 
 ### Linux
 
-Ubuntu (at least as of 16.04 LTE) ships with both Python 3 and Python 2 pre-installed. To make sure our versions are up-to-date run:
+First things first, open the terminal. To do so press the meta key and type `terminal` in the search box. Double click on it to open. 
+
+Ubuntu (at least as of 16.04 LTE) ships with both Python 3 and Python 2 pre-installed. To make sure our versions are up-to-date copy and paste the following commands to the terminal:
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -106,7 +108,9 @@ Here, `package_name` can refer to any Python package or library, such as Django 
 
 Although Mac OS X comes with Python pre-installed, it is a wrong version of Python (2.7) and we need to install a new one (3.X, currently 3.6 or 3.7). 
 
-1. Install Xcode: It is required to install Homebrew and Python. Download it from the App store. After a lengthy download and install process, open a terminal and type the following command to install Xcode Command Line tools which are required for Homebrew:
+1. Install Xcode: It is required to install Homebrew and Python. Download it from the App store. After a lengthy download and install process, open a terminal. To open a terminal: open the Launchpad from the Dock and type `terminal` in the search box. Click on it to open. 
+
+ Type the following command into terminal to install Xcode Command Line tools. They are required for Homebrew:
 
 ```
 xcode-select —-install
