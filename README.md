@@ -23,8 +23,8 @@ See main article: [Installation Party](manual/installation_party.md).
 ## Presentation
 [Workshop presentation](https://docs.google.com/presentation/d/1NIWjBqOPHquaL0X3gXUJojl1b3qsg5r3A1MgZlXUJh8/edit?usp=sharing).
 
-## Short exercises
-See main article: [Short exercises](tasks/short_exercises/README.md).
+## Short tasks
+See main article: [Short tasks](tasks/short_tasks/README.md).
 
 ## Text adventure tasks
 See main article: [Adventure](tasks/README.md).

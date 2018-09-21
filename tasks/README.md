@@ -11,12 +11,12 @@ when you get stuck ;)
 
 Tasks
 
-- 1 [Introduction to adventure - if else](tasks/task_1_ifelse.py)
-- 2 [Players Name - Variables and printing](tasks/task_2_name.py)
-- 3 [Functions](tasks/task_3_functions.py)
-- 4 [Loops and lists](tasks/task_4_loops_lists.py)
-- 5 [Dictionaries](tasks/task_5_dictionaries.py)
-- 6 [Optional - more functions](tasks/task_6_optional_function.py)
-- 7 [Optional - Advanced Dictionaries](tasks/task_7_optional_dict.py)
+- 1 [Introduction to adventure - if else](task_1_ifelse.py)
+- 2 [Players Name - Variables and printing](task_2_name.py)
+- 3 [Functions](task_3_functions.py)
+- 4 [Loops and lists](task_4_loops_lists.py)
+- 5 [Dictionaries](task_5_dictionaries.py)
+- 6 [Optional - more functions](task_6_optional_function.py)
+- 7 [Optional - Advanced Dictionaries](task_7_optional_dict.py)
 
    
