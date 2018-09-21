@@ -191,7 +191,7 @@ To create an account on Github:
 
 ### Windows
 
-There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to [C:\Users\onomatopeia\Desktop\github_repo.png](http://git-scm.com/download/win) and the download will start automatically. 
+There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to [http://git-scm.com/download/win](http://git-scm.com/download/win) and the download will start automatically. 
 
 Run the installer. 
 
