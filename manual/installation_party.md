@@ -3,14 +3,16 @@
 We ask you to do a few things:
 1. Install Python 3 interpreter, so that you can run your code.
 2. Install Pycharm - a powerful programming environment to make your programming efforts easier.
-3. Create an account on [github.com](github.com).
-4. Install git.
+3. Create an account on [Github.com](github.com).
+4. Install Git.
+5. Configure Git.
 
 ## Table of Contents
 * [Installing Python 3](#installing-python-3)
 * [Installing PyCharm](#installing-pycharm)
-* [Creating github account](#creating-github-account)
-* [Installing git](#installing-git)
+* [Creating Github account](#creating-github-account)
+* [Installing Git](#installing-git)
+* [Configuring Git](#configuring-git)
 
 ## Installing Python 3
 Choose your operating system and follow the instructions:
@@ -194,12 +196,14 @@ There are also a few ways to install Git on Windows. The most official build is 
 Run the installer. 
 
 When asked about editor, choose Nano
+
 ![Nano](images/not_vim.png "Choose Nano")
 
 When asked about adjusting your Path environment choose the second option
+
 ![As cmd tool](images/screen2.png "As cmd tool")
 
-For other settings go with default.
+For other settings go with the default (preselected) values.
 
 ### Linux
 
