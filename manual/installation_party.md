@@ -186,9 +186,20 @@ To create an account on Github:
 
 ## Installing Git
 
+
 ### Windows
 
-There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to http://git-scm.com/download/win and the download will start automatically. 
+There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to [C:\Users\onomatopeia\Desktop\github_repo.png](http://git-scm.com/download/win) and the download will start automatically. 
+
+Run the installer. 
+
+When asked about editor, choose Nano
+![Nano](images/not_vim.png "Choose Nano")
+
+When asked about adjusting your Path environment choose the second option
+![As cmd tool](images/screen2.png "As cmd tool")
+
+For other settings go with default.
 
 ### Linux
 
@@ -208,4 +219,17 @@ $ sudo apt install git-all
 You can install Git with Homebrew:
 ```
 brew install git
+```
+
+## Configuring Git
+
+Open terminal / command line, that is:
+* [Windows] Press Windows key, type `cmd` and press enter.
+* [Linux] Press Meta key, type `terminal` and press enter  / click on the application. 
+* [Mac OS X] Go to Launchpad, type `terminal` in the search and press enter / click on the application. 
+
+Type in the following, replacing YOUR_NAME with your name and YOUR_EMAIL with your email that you used on GitHub:
+```
+git config --global user.name YOUR_NAME
+git config --global user.email YOUR_EMAIL
 ```
