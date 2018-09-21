@@ -20,7 +20,7 @@ Choose your operating system and follow the instructions:
 * [Linux](#linux) on an example of Ubuntu
 * [Mac OS X](#mac-os-x)
 * [Chrome OS](#chrome-os)
-* [I can't install Python / Nothing works](#i-cant-install-python)
+* [I can't install Python / Nothing works](#i-cant-install-python--nothing-works)
 
 ### Windows 
 
