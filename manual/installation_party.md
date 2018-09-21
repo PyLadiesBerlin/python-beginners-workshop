@@ -1,14 +1,18 @@
 # Installation Party
 
-We ask you to do three things:
+We ask you to do a few things:
 1. Install Python 3 interpreter, so that you can run your code.
 2. Install Pycharm - a powerful programming environment to make your programming efforts easier.
-3. Create an account on [github.com](github.com).
+3. Create an account on [Github.com](github.com).
+4. Install Git.
+5. Configure Git.
 
 ## Table of Contents
 * [Installing Python 3](#installing-python-3)
 * [Installing PyCharm](#installing-pycharm)
-* [Creating github account](#creating-github-account)
+* [Creating Github account](#creating-github-account)
+* [Installing Git](#installing-git)
+* [Configuring Git](#configuring-git)
 
 ## Installing Python 3
 Choose your operating system and follow the instructions:
@@ -66,7 +70,9 @@ then something went wrong. Try again or search for support on our Slack.
 
 ### Linux
 
-Ubuntu (at least as of 16.04 LTE) ships with both Python 3 and Python 2 pre-installed. To make sure our versions are up-to-date run:
+First things first, open the terminal. To do so press the meta key and type `terminal` in the search box. Double click on it to open. 
+
+Ubuntu (at least as of 16.04 LTE) ships with both Python 3 and Python 2 pre-installed. To make sure our versions are up-to-date copy and paste the following commands to the terminal:
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -106,7 +112,9 @@ Here, `package_name` can refer to any Python package or library, such as Django 
 
 Although Mac OS X comes with Python pre-installed, it is a wrong version of Python (2.7) and we need to install a new one (3.X, currently 3.6 or 3.7). 
 
-1. Install Xcode: It is required to install Homebrew and Python. Download it from the App store. After a lengthy download and install process, open a terminal and type the following command to install Xcode Command Line tools which are required for Homebrew:
+1. Install Xcode: It is required to install Homebrew and Python. Download it from the App store. After a lengthy download and install process, open a terminal. To open a terminal: open the Launchpad from the Dock and type `terminal` in the search box. Click on it to open. 
+
+ Type the following command into terminal to install Xcode Command Line tools. They are required for Homebrew:
 
 ```
 xcode-select —-install
@@ -178,3 +186,54 @@ To create an account on Github:
 
 ![Github](images/github.png "Github")
 
+## Installing Git
+
+
+### Windows
+
+There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to [http://git-scm.com/download/win](http://git-scm.com/download/win) and the download will start automatically. 
+
+Run the installer. 
+
+When asked about editor, choose Nano
+
+![Nano](images/not_vim.png "Choose Nano")
+
+When asked about adjusting your Path environment choose the second option
+
+![As cmd tool](images/screen2.png "As cmd tool")
+
+For other settings go with the default (preselected) values.
+
+### Linux
+
+You can install Git through the package management tool that comes with your distribution. If you’re on Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS), you can use dnf:
+```
+$ sudo dnf install git-all
+```
+
+If you’re on a Debian-based distribution, such as Ubuntu, try apt:
+```
+$ sudo apt install git-all
+```
+
+
+### Mac OS X
+
+You can install Git with Homebrew:
+```
+brew install git
+```
+
+## Configuring Git
+
+Open terminal / command line, that is:
+* [Windows] Press Windows key, type `cmd` and press enter.
+* [Linux] Press Meta key, type `terminal` and press enter  / click on the application. 
+* [Mac OS X] Go to Launchpad, type `terminal` in the search and press enter / click on the application. 
+
+Type in the following, replacing YOUR_NAME with your name and YOUR_EMAIL with your email that you used on GitHub:
+```
+git config --global user.name YOUR_NAME
+git config --global user.email YOUR_EMAIL
+```
