@@ -17,6 +17,6 @@ Tasks
 - 4 [Loops and lists](task_4_loops_lists.py)
 - 5 [Dictionaries](task_5_dictionaries.py)
 - 6 [Optional - more functions](task_6_optional_function.py)
-- 7 [Optional - Advanced Dictionaries](task_7_optional_dict.py)
+- 7 [Optional - Advanced Dictionaries](task_7_optional_dict_advanced.py)
 
    
