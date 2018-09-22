@@ -31,7 +31,7 @@ if door == "1":
     if vampire == "1":
         print(f"Congratulations {name}, you found a new friend!")
     elif vampire == "2":
-        print(f"Sorry {name}, the vampire is faster. You become a dinner." % (name))
+        print(f"Sorry {name}, the vampire is faster. You become a dinner.")
     else:
         print("You are not so good with numbers, are you?")
 
