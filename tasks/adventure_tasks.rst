@@ -1,3 +1,4 @@
+===============
 Adventure Tasks
 ===============
 
@@ -6,13 +7,13 @@ Adventure Tasks
 
 
 1. If/Else
-----------
+==========
 
 A) Type the following code, save it in a file and try to understand what it does.
 B) Run the file and check if what you imagined really happens.
 C) Get creative! Right after the inline comments, add a second door using the elif statement.
 
-::
+.. code-block:: python
 
     print()
     print("Welcome to the dungeon!")
@@ -42,7 +43,7 @@ C) Get creative! Right after the inline comments, add a second door using the el
 
 
 2. Variables
-------------
+============
 
 Now that you created new doors for your player to choose from, let's
 personalize the game a little bit. Write the answer to each exercise under its
@@ -53,7 +54,7 @@ B) Use the variable in which you stored the players name to print a welcoming.
 C) Customize the replies to the vampire to show the user name like in the code here.
 D) Time to get creative! Ask one more question to the player and use their answer.
 
-::
+.. code-block:: python
 
     print()
     # Exercise A
@@ -88,13 +89,13 @@ D) Time to get creative! Ask one more question to the player and use their answe
 
 
 3. Functions
-------------
+============
 
 A) Create a function that prints and alert of wrong input (something to substitute the answer of the else).
 B) Use your function where it applies.
 C) Now think a bit, how would you write a dead-function using an argument called death_message? Create this function.
 
-::
+.. code-block:: python
 
     # Exercise A
 
@@ -133,7 +134,7 @@ C) Now think a bit, how would you write a dead-function using an argument called
 
 
 4. Loops and Lists
-------------------
+==================
 
 A) Create a list variable named `friends` that contains names of the user friends.
 
@@ -143,6 +144,8 @@ C) Make this name to be chosen randomly. Import Python library random, that has 
 
 D) Extend your death function (from functions task before) telling the user that is falling from high:
     Eg. print:
+
+::
 
     "You are falling for...
 
@@ -162,11 +165,12 @@ D) Extend your death function (from functions task before) telling the user that
 
     You are dead!"
 
-    Try to print all the numbers up to 30 or 50 with a for loop using range function, eg. range(30) will return some kind of list with numbers from 0-29.
+
+Try to print all the numbers up to 30 or 50 with a for loop using range function, eg. range(30) will return some kind of list with numbers from 0-29.
 
 E) Add a delay between the falling with time.sleep(secs), Eg. time.sleep(1) will pause the program for 1 sec. Remember to add import for time library typing `import time` in the beginning of the code.
 
-::
+.. code-block:: python
 
     # Exercise C the import goes here
 
@@ -204,7 +208,7 @@ E) Add a delay between the falling with time.sleep(secs), Eg. time.sleep(1) will
 
 
 5. Dictionaries
----------------
+===============
 
 Dictionaries are super useful python data structures and if you are dealing with data, like
 wikipedia data, questionaire data, or anything you can imagine, dictionaries will prove useful.
@@ -212,7 +216,7 @@ wikipedia data, questionaire data, or anything you can imagine, dictionaries wil
 A) Let's use a dictionary to describe each room. Create a dictionary variable called door_greetings with keys the door numbers and values the door greeting. eg. door_greetings = {'1': "Welcome to the paradise"}.
 B) When the user enters each room print the corresponding door greeting from the dictionary.
 
-::
+.. code-block:: python
 
     # Exercise A
     # door_greetings =
@@ -248,13 +252,13 @@ B) When the user enters each room print the corresponding door greeting from the
 
 
 6. More functions, 'cause functions are fun!
---------------------------------------------
+============================================
 
 Practice more functions. Use the code below.
 
 A) Get creative write a function your_room. Check where it is called in the room.
 
-::
+.. code-block:: python
 
     from sys import exit
 
@@ -296,8 +300,8 @@ A) Get creative write a function your_room. Check where it is called in the room
     start()
 
 
-7. Now with no hands!
----------------------
+7. More dictionaries for the adventurous ones!
+==============================================
 
 Use the dictionary adventure below to control the game play instead of if-else statements.
 
@@ -337,7 +341,7 @@ E) If the chosen door is not available in adventure show a message. Tip to check
     eg. if door in adventure.
 
 
-::
+.. code-block:: python
 
     adventure = {
         '1': {
