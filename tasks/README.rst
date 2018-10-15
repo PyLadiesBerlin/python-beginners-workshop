@@ -79,21 +79,35 @@ D) Time to get creative! Ask one more question to the player and use their answe
    inside a door, or after the doors a totally separate question in the end of the file.
 
 
-
-
-    # Your code from Task 1 should be here
-
-    else:
-        print("You are not so good with numbers, are you?")
-
-    # Exercise D
-
-
 3. Functions
 ============
 
-A) Create a function that prints and alert of wrong input (something to substitute the answer of the else).
+Continue in your file from the previous exercise or use the solution from the previous exercise
+as a base for this exercise.
+A) Create a function in the begging of your file that prints and alerts of wrong input (something to substitute the answer of the else).
 B) Use your function where it applies.
+C) Change your function to receive an argument called `valid`. eg `def wrong_input(valid)`. Your function can
+now print the value of `valid` options that are passed. For example if the valid options for the user to type is `1` or `2`,
+when the user types something other than 1 or 2, the `wrong_input` function should be called like that:
+
+.. code-block:: python
+
+    wrong_input("1, 2") # this could print: "Sorry but the only valid options are: 1,2. Try again please"
+
+
+4. Loops and Lists
+==================
+
+A) Create a list variable named `friends` that contains names of the user friends.
+
+B) When a user enters some room, print a message saying that her 2nd friend in the list is in the room. Remember: Access list elements like this, eg. friends[0], friends[1]
+
+C) Make this name to be chosen randomly. Import Python library random, that has functions to help with random numbers and use random.randint(a, b) function to give you a random number between a and b. eg. random.randint(1,4) will give a random number among 1, 2, 3, 4.
+
+
+5. Loops, Range, Function
+=========================
+
 C) Now think a bit, how would you write a dead-function using an argument called death_message? Create this function.
 
 .. code-block:: python
@@ -133,15 +147,6 @@ C) Now think a bit, how would you write a dead-function using an argument called
 
     # Your code from Exercise C on Task 2 should be here
 
-
-4. Loops and Lists
-==================
-
-A) Create a list variable named `friends` that contains names of the user friends.
-
-B) When a user enters some room, print a message saying that her 2nd friend in the list is in the room. Remember: Access list elements like this, eg. friends[0], friends[1]
-
-C) Make this name to be chosen randomly. Import Python library random, that has functions to help with random numbers and use random.randint(a, b) function to give you a random number between a and b. eg. random.randint(1,4) will give a random number among 1, 2, 3, 4.
 
 D) Extend your death function (from functions task before) telling the user that is falling from high:
     Eg. print:
@@ -208,7 +213,7 @@ E) Add a delay between the falling with time.sleep(secs), Eg. time.sleep(1) will
     # Your code from Task 2 should be here
 
 
-5. Dictionaries
+6. Dictionaries
 ===============
 
 Dictionaries are super useful python data structures and if you are dealing with data, like
@@ -252,7 +257,7 @@ B) When the user enters each room print the corresponding door greeting from the
     # Your code from Task 2 should be here
 
 
-6. More functions, 'cause functions are fun!
+7. More functions, 'cause functions are fun!
 ============================================
 
 Practice more functions. Use the code below.
@@ -301,7 +306,7 @@ A) Get creative write a function your_room. Check where it is called in the room
     start()
 
 
-7. More dictionaries for the adventurous ones!
+8. More dictionaries for the adventurous ones!
 ==============================================
 
 Use the dictionary adventure below to control the game play instead of if-else statements.
