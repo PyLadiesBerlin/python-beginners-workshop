@@ -98,17 +98,32 @@ when the user types something other than 1 or 2, the `wrong_input` function shou
 4. Loops and Lists
 ==================
 
-A) Create a list variable named `friends` that contains names of the user friends.
+Continue in your file from the previous exercise or use the solution from the previous exercise
+as a base for this exercise.
 
-B) When a user enters some room, print a message saying that her 2nd friend in the list is in the room. Remember: Access list elements like this, eg. friends[0], friends[1]
+A) At the beginning of the file, create a *list* variable named `friends` with names of the user's friends.
 
-C) Make this name to be chosen randomly. Import Python library random, that has functions to help with random numbers and use random.randint(a, b) function to give you a random number between a and b. eg. random.randint(1,4) will give a random number among 1, 2, 3, 4.
+    # Remember defining a list variable looks like that:
+    my_var = ['zero_element', 'first_element']
+
+B) When a user enters some room, print a message saying that her 2nd friend in the list is in the room (print the name
+   of the friend from the variable `friends`).
+
+    # Remember: Access list elements like this eg. friends[0], friends[1]
+
+C) Make this name to be chosen randomly. At the first line of the file, import Python library called `random`.
+This library has functions to help with random numbers and use `random.randint(a, b)` function to give you a
+random number between a and b. eg. `random.randint(1, 4)` will return a random number between 1-4, so one of
+1, 2, 3, 4. Use this function to choose a random name from the names list.
+
+    # Remember: import statement looks like this:
+    import that_awesome_library_name
 
 
 5. Loops, Range, Function
 =========================
 
-C) Now think a bit, how would you write a dead-function using an argument called death_message? Create this function.
+A) Now think a bit, how would you write a dead-function using an argument called death_message? Create this function.
 
 .. code-block:: python
 
