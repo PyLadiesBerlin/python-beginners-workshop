@@ -27,7 +27,7 @@ See main article: [Installation Party](manual/installation_party.md).
 See main article: [Short tasks](tasks/short_tasks/README.md).
 
 ## Text adventure tasks
-See main article: [Adventure](tasks/README.md).
+See main article: [Adventure](tasks/README.rst).
 
 
 # How to organize
