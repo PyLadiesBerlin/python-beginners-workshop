@@ -123,48 +123,24 @@ random number between a and b. eg. `random.randint(1, 4)` will return a random n
 5. Loops, Range, Function
 =========================
 
-A) Now think a bit, how would you write a dead-function using an argument called death_message? Create this function.
+Continue in your file from the previous exercise or use the solution from the previous exercise
+as a base for this exercise.
 
-.. code-block:: python
+A) Now think a bit, how would you write a `dead` function using an argument called `death_message`? This
+ function could be called in every point that they user dies eg. when the user becomes a dinner for the
+  vampire. To figure out where this function should be added, check the structure of a typical python file:
 
-    # Exercise A
+.. _file_structure:
 
-    # Exercise C
+    # import statements
 
-    print()
-    # Your code from Exercise A on Task 2 should be here
+    # function definitions
 
-    # Your code from Exercise B on Task 2 should be here
+    # global variables (variable outside functions)
 
-    print("Do you go through door 1 or door 2?")
+    # code outside of a function
 
-    door = input("> ")
-
-    if door == "1":
-        print("There is a nice vampire asking you if you enjoy life.")
-        print("What do you do?")
-        print("1. Smile and nod")
-        print("2. Scream and run")
-
-        vampire = input("> ")
-
-        if vampire == "1":
-            print(f"Congratulations {name}, you found a new friend!")
-        elif vampire == "2":
-            print(f"Sorry {name}, the vampire is faster. You become a dinner.")
-        else:
-            # Exercise B
-
-    # Your code from Task 1 should be here
-
-    else:
-        wrong_input()
-
-    # Your code from Exercise C on Task 2 should be here
-
-
-D) Extend your death function (from functions task before) telling the user that is falling from high:
-    Eg. print:
+B) Extend your `death` function telling the user that is falling from high. Make the function print:
 
 ::
 
@@ -176,57 +152,20 @@ D) Extend your death function (from functions task before) telling the user that
 
     3
 
-    ...
+    ...  # with all the numbers in between
 
     30
-
-    ...
 
     meters!
 
     You are dead!"
 
 
-Try to print all the numbers up to 30 or 50 with a for loop using range function, eg. range(30) will return some kind of list with numbers from 0-29.
+Print all the numbers up to 30 or 50 with a `for` loop using `range` function. For example `range(30)` will
+return some kind of list with numbers from 0-29.
 
-E) Add a delay between the falling with time.sleep(secs), Eg. time.sleep(1) will pause the program for 1 sec. Remember to add import for time library typing `import time` in the beginning of the code.
-
-.. code-block:: python
-
-    # Exercise C the import goes here
-
-    # Exercise A
-    # friends =
-
-    print()
-
-    print("Do you go through door 1 or door 2?")
-
-    door = input("> ")
-
-    if door == "1":
-        # Exercise B, C
-        print("There is a nice vampire asking you if you enjoy life.")
-        print("What do you do?")
-        print("1. Smile and nod")
-        print("2. Scream and run")
-
-        vampire = input("> ")
-
-        if vampire == "1":
-            print(f"Congratulations {name}, you found a new friend!")
-        elif vampire == "2":
-            print(f"Sorry {name}, the vampire is faster. You become a dinner.")
-        else:
-            # Your code from Task 3 should be here
-
-    # Your code from Task 1 should be here
-
-    else:
-        wrong_input()
-
-    # Your code from Task 2 should be here
-
+C) Add a delay while falling in each step with `time.sleep(secs)`, Eg. `time.sleep(1)` will pause
+the program for 1 sec. Remember to add import for time library with `import time` before it is used (see file_structure_).
 
 6. Dictionaries
 ===============
