@@ -26,7 +26,6 @@ C) Get creative! Right after the inline comments, add a second door using the el
 
 .. code-block:: python
 
-    print()
     print("Welcome to the dungeon!")
     print("Do you go through door 1 or door 2?")
 
@@ -47,7 +46,7 @@ C) Get creative! Right after the inline comments, add a second door using the el
         else:
             print("You are not so good with numbers, are you?")
 
-    # Exercise C
+    # Add code here! Make sure to be indented (vertically aligned) correctly
 
     else:
         print("You are not so good with numbers, are you?")
@@ -56,40 +55,31 @@ C) Get creative! Right after the inline comments, add a second door using the el
 2. Variables
 ============
 
-Now that you created new doors for your player to choose from, let's
+Continue in your file from the previous exercise or use the solution from the previous exercise
+as a base for this exercise.
+Now that you created a new door for your player to choose from, let's
 personalize the game a little bit. Write the answer to each exercise under its
 related inline comment.
 
-A) Ask the name of the player and store the answer on a variable.
-B) Use the variable in which you stored the players name to print a welcoming.
-C) Customize the replies to the vampire to show the user name like in the code here.
-D) Time to get creative! Ask one more question to the player and use their answer.
+A) At the beginning of the program, add code to ask the name of the player and store the answer
+in a variable.
+B) Right after the line you added in A, use the variable in which you stored the
+players name to print a welcoming using the name of the user.
+C) Customize the replies to the various doors and questions to show the user name.
+For example if the variable `name` holds the name of the user, the code could look like that: (for Python 3.6 or greater)
 
 .. code-block:: python
 
-    print()
-    # Exercise A
 
-    # Exercise B
-
-    print("Do you go through door 1 or door 2?")
-
-    door = input("> ")
-
-    if door == "1":
-        print("There is a nice vampire asking you if you enjoy life.")
-        print("What do you do?")
-        print("1. Smile and nod")
-        print("2. Scream and run")
-
-        vampire = input("> ")
-
-        if vampire == "1":
+    if vampire == "1":
             print(f"Congratulations {name}, you found a new friend!")
-        elif vampire == "2":
-            print(f"Sorry {name}, the vampire is faster. You become a dinner.")
-        else:
-            print("You are not so good with numbers, are you?")
+
+
+D) Time to get creative! Ask one more question to the player and use their answer. It can be either
+   inside a door, or after the doors a totally separate question in the end of the file.
+
+
+
 
     # Your code from Task 1 should be here
 
