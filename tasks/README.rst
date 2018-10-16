@@ -20,9 +20,13 @@ Adventure Tasks
 1. If/Else
 ==========
 
-A) Type the following code, save it in a file and try to understand what it does.
+A) Type the following code, save it in a file and try to understand what
+it does.
+
 B) Run the file and check if what you imagined really happens.
-C) Get creative! Right after the inline comments, add a second door using the elif statement.
+
+C) Get creative! Right after the inline comments, add a second door
+using the elif statement.
 
 .. code-block:: python
 
@@ -61,18 +65,23 @@ Now that you created a new door for your player to choose from, let's
 personalize the game a little bit. Write the answer to each exercise under its
 related inline comment.
 
-A) At the beginning of the program, add code to ask the name of the player and store the answer
-in a variable.
-B) Right after the line you added in A, use the variable in which you stored the
-players name to print a welcoming using the name of the user.
-C) Customize the replies to the various doors and questions to show the user name.
-For example if the variable `name` holds the name of the user, the code could look like that: (for Python 3.6 or greater)
+A) At the beginning of the program, add code to ask the name of the
+player and store the answer in a variable.
+
+B) Right after the line you added in A, use the variable in which you
+stored the players name to print a welcoming using the name of the user.
+
+C) Customize the replies to the various doors and questions to show the
+user name. For example if the variable `name` holds the name of the user,
+the code could look like that: (for Python 3.6 or greater)
+
 
 .. code-block:: python
 
 
     if vampire == "1":
             print(f"Congratulations {name}, you found a new friend!")
+
 
 
 D) Time to get creative! Ask one more question to the player and use their answer. It can be either
@@ -84,11 +93,16 @@ D) Time to get creative! Ask one more question to the player and use their answe
 
 Continue in your file from the previous exercise or use the solution from the previous exercise
 as a base for this exercise.
-A) Create a function in the begging of your file that prints and alerts of wrong input (something to substitute the answer of the else).
+
+A) Create a function in the begging of your file that prints and alerts of wrong
+input (something to substitute the answer of the else).
+
 B) Use your function where it applies.
-C) Change your function to receive an argument called `valid`. eg `def wrong_input(valid)`. Your function can
-now print the value of `valid` options that are passed. For example if the valid options for the user to type is `1` or `2`,
-when the user types something other than 1 or 2, the `wrong_input` function should be called like that:
+
+C) Change your function to receive an argument called ``valid``.
+eg ``def wrong_input(valid)``. Your function can now print the value of
+`valid` options that are passed. For example if the valid options for the
+user to type is `1` or `2`, when the user types something other than 1 or 2, the `wrong_input` function should be called like that:
 
 .. code-block:: python
 
@@ -101,20 +115,24 @@ when the user types something other than 1 or 2, the `wrong_input` function shou
 Continue in your file from the previous exercise or use the solution from the previous exercise
 as a base for this exercise.
 
-A) At the beginning of the file, create a *list* variable named `friends` with names of the user's friends.
+A) At the beginning of the file, create a *list* variable named ``friends`` with names of the user's friends.
+
+.. code-block:: python
 
     # Remember defining a list variable looks like that:
     my_var = ['zero_element', 'first_element']
 
 B) When a user enters some room, print a message saying that her 2nd friend in the list is in the room (print the name
-   of the friend from the variable `friends`).
+   of the friend from the variable ``friends``).
 
     # Remember: Access list elements like this eg. friends[0], friends[1]
 
-C) Make this name to be chosen randomly. At the first line of the file, import Python library called `random`.
-This library has functions to help with random numbers and use `random.randint(a, b)` function to give you a
-random number between a and b. eg. `random.randint(1, 4)` will return a random number between 1-4, so one of
+C) Make this name to be chosen randomly. At the first line of the file, import Python library called ``random``.
+This library has functions to help with random numbers and use ``random.randint(a, b)`` function to give you a
+random number between a and b. eg. ``random.randint(1, 4)`` will return a random number between 1-4, so one of
 1, 2, 3, 4. Use this function to choose a random name from the names list.
+
+.. code-block:: python
 
     # Remember: import statement looks like this:
     import that_awesome_library_name
@@ -126,9 +144,9 @@ random number between a and b. eg. `random.randint(1, 4)` will return a random n
 Continue in your file from the previous exercise or use the solution from the previous exercise
 as a base for this exercise.
 
-A) Now think a bit, how would you write a `dead` function using an argument called `death_message`? This
- function could be called in every point that they user dies eg. when the user becomes a dinner for the
-  vampire. To figure out where this function should be added, check the structure of a typical python file:
+A) Now think a bit, how would you write a ``dead`` function using an argument called ``death_message``? This
+function could be called in every point that they user dies eg. when the user becomes a dinner for the
+vampire. To figure out where this function should be added, check the structure of a typical python file:
 
 .. _file_structure:
 
@@ -173,7 +191,9 @@ the program for 1 sec. Remember to add import for time library with `import time
 Dictionaries are super useful python data structures and if you are dealing with data, like
 wikipedia data, questionaire data, or anything you can imagine, dictionaries will prove useful.
 
-A) Let's use a dictionary to describe each room. Create a dictionary variable called door_greetings with keys the door numbers and values the door greeting. eg. door_greetings = {'1': "Welcome to the paradise"}.
+A) Let's use a dictionary to describe each room. Create a dictionary
+variable called door_greetings with keys the door numbers and values the door greeting. eg. door_greetings = {'1': "Welcome to the paradise"}.
+
 B) When the user enters each room print the corresponding door greeting from the dictionary.
 
 .. code-block:: python
