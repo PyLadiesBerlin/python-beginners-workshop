@@ -123,7 +123,7 @@ A) At the beginning of the file, create a *list* variable named ``friends`` with
     my_var = ['zero_element', 'first_element']
 
 B) When a user enters some room, print a message saying that her 2nd friend in the list is in the room (print the name
-   of the friend from the variable ``friends``).
+of the friend from the variable ``friends``).
 
     # Remember: Access list elements like this eg. friends[0], friends[1]
 
