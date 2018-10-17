@@ -85,7 +85,7 @@ the code could look like that: (for Python 3.6 or greater)
 
 
 D) Time to get creative! Ask one more question to the player and use their answer. It can be either
-   inside a door, or after the doors a totally separate question in the end of the file.
+inside a door, or after the doors a totally separate question in the end of the file.
 
 
 3. Functions
