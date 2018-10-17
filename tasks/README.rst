@@ -80,7 +80,7 @@ the code could look like that: (for Python 3.6 or greater)
 
 
     if vampire == "1":
-            print(f"Congratulations {name}, you found a new friend!")
+        print(f"Congratulations {name}, you found a new friend!")
 
 
 
