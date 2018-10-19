@@ -124,6 +124,8 @@ A) At the beginning of the file, create a *list* variable named ``friends`` with
 B) When a user enters some room, print a message saying that her 2nd friend in the list is in the room (print the name
    of the friend from the variable ``friends``).
 
+::
+
     # Remember: Access list elements like this eg. friends[0], friends[1]
 
 C) Make this name to be chosen randomly. At the first line of the file, import Python library called ``random``.
@@ -148,6 +150,8 @@ A) Now think a bit, how would you write a ``dead`` function using an argument ca
    vampire. To figure out where this function should be added, check the structure of a typical python file:
 
 .. _file_structure:
+
+::
 
     # import statements
 
@@ -182,7 +186,7 @@ Print all the numbers up to 30 or 50 with a `for` loop using `range` function. F
 return some kind of list with numbers from 0-29.
 
 C) Add a delay while falling in each step with `time.sleep(secs)`, Eg. `time.sleep(1)` will pause
-  the program for 1 sec. Remember to add import for time library with `import time` before it is used (see file_structure_).
+   the program for 1 sec. Remember to add import for time library with `import time` before it is used (see file_structure_).
 
 6. Dictionaries
 ===============
