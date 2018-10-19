@@ -1,4 +1,6 @@
-# Create your own adventure
+=========================
+Create your own adventure
+=========================
 
 This set of tasks aims to help you practice basic Python concepts (variables, printing, user input,
 if-elif-else condition, list, for loop, dictionary, libraries).
@@ -9,9 +11,6 @@ just use it as a guide. Go back to the presentation examples to check the syntax
 coaches for help when you get stuck ;) As a last resource, there's a file with a possible
 solution in the end of each task.
 
-===============
-Adventure Tasks
-===============
 
 
 .. contents::
@@ -161,7 +160,7 @@ A) Now think a bit, how would you write a ``dead`` function using an argument ca
 
     # code outside of a function
 
-B) Extend your `death` function telling the user that is falling from high. Make the function print:
+B) Extend your ``dead`` function telling the user that is falling from high. Make the function print:
 
 ::
 
@@ -182,11 +181,11 @@ B) Extend your `death` function telling the user that is falling from high. Make
     You are dead!"
 
 
-Print all the numbers up to 30 or 50 with a `for` loop using `range` function. For example `range(30)` will
+Print all the numbers up to 30 or 50 with a ``for`` loop using ``range`` function. For example ``range(30)`` will
 return some kind of list with numbers from 0-29.
 
-C) Add a delay while falling in each step with `time.sleep(secs)`, Eg. `time.sleep(1)` will pause
-   the program for 1 sec. Remember to add import for time library with `import time` before it is used (see file_structure_).
+C) Add a delay while falling in each step with ``time.sleep(secs)`, Eg. ``time.sleep(1)`` will pause
+   the program for 1 sec. Remember to add import for time library with ``import time`` before it is used (see file_structure_).
 
 6. Dictionaries
 ===============
