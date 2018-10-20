@@ -1,4 +1,6 @@
-# Create your own adventure
+=========================
+Create your own adventure
+=========================
 
 This set of tasks aims to help you practice basic Python concepts (variables, printing, user input,
 if-elif-else condition, list, for loop, dictionary, libraries).
@@ -9,9 +11,6 @@ just use it as a guide. Go back to the presentation examples to check the syntax
 coaches for help when you get stuck ;) As a last resource, there's a file with a possible
 solution in the end of each task.
 
-===============
-Adventure Tasks
-===============
 
 
 .. contents::
@@ -20,13 +19,15 @@ Adventure Tasks
 1. If/Else
 ==========
 
-A) Type the following code, save it in a file and try to understand what it does.
+A) Type the following code, save it in a file and try to understand what
+   it does.
+
 B) Run the file and check if what you imagined really happens.
+
 C) Get creative! Right after the inline comments, add a second door using the elif statement.
 
 .. code-block:: python
 
-    print()
     print("Welcome to the dungeon!")
     print("Do you go through door 1 or door 2?")
 
@@ -47,7 +48,7 @@ C) Get creative! Right after the inline comments, add a second door using the el
         else:
             print("You are not so good with numbers, are you?")
 
-    # Exercise C
+    # Add code here! Make sure to be indented (vertically aligned) correctly
 
     else:
         print("You are not so good with numbers, are you?")
@@ -56,105 +57,110 @@ C) Get creative! Right after the inline comments, add a second door using the el
 2. Variables
 ============
 
-Now that you created new doors for your player to choose from, let's
+Continue in your file from the previous exercise or use the solution from the previous exercise
+as a base for this exercise.
+Now that you created a new door for your player to choose from, let's
 personalize the game a little bit. Write the answer to each exercise under its
 related inline comment.
 
-A) Ask the name of the player and store the answer on a variable.
-B) Use the variable in which you stored the players name to print a welcoming.
-C) Customize the replies to the vampire to show the user name like in the code here.
-D) Time to get creative! Ask one more question to the player and use their answer.
+A) At the beginning of the program, add code to ask the name of the
+   player and store the answer in a variable.
+
+B) Right after the line you added in A, use the variable in which you
+   stored the players name to print a welcoming using the name of the user.
+
+C) Customize the replies to the various doors and questions to show the
+   user name. For example if the variable `name` holds the name of the user,
+   the code could look like that: (for Python 3.6 or greater)
+
 
 .. code-block:: python
 
-    print()
-    # Exercise A
 
-    # Exercise B
+    if vampire == "1":
+        print(f"Congratulations {name}, you found a new friend!")
 
-    print("Do you go through door 1 or door 2?")
 
-    door = input("> ")
 
-    if door == "1":
-        print("There is a nice vampire asking you if you enjoy life.")
-        print("What do you do?")
-        print("1. Smile and nod")
-        print("2. Scream and run")
-
-        vampire = input("> ")
-
-        if vampire == "1":
-            print(f"Congratulations {name}, you found a new friend!")
-        elif vampire == "2":
-            print(f"Sorry {name}, the vampire is faster. You become a dinner.")
-        else:
-            print("You are not so good with numbers, are you?")
-
-    # Your code from Task 1 should be here
-
-    else:
-        print("You are not so good with numbers, are you?")
-
-    # Exercise D
+D) Time to get creative! Ask one more question to the player and use their answer. It can be either
+   inside a door, or after the doors a totally separate question in the end of the file.
 
 
 3. Functions
 ============
 
-A) Create a function that prints and alert of wrong input (something to substitute the answer of the else).
+Continue in your file from the previous exercise or use the solution from the previous exercise
+as a base for this exercise.
+
+A) Create a function in the begging of your file that prints and alerts of wrong
+   input (something to substitute the answer of the else).
+
 B) Use your function where it applies.
-C) Now think a bit, how would you write a dead-function using an argument called death_message? Create this function.
+
+C) Change your function to receive an argument called ``valid``.
+   eg ``def wrong_input(valid)``. Your function can now print the value of
+   ``valid`` options that are passed. For example if the valid options for the
+   user to type is `1` or `2`, when the user types something other than 1 or 2, the `wrong_input` function should be called like that:
 
 .. code-block:: python
 
-    # Exercise A
-
-    # Exercise C
-
-    print()
-    # Your code from Exercise A on Task 2 should be here
-
-    # Your code from Exercise B on Task 2 should be here
-
-    print("Do you go through door 1 or door 2?")
-
-    door = input("> ")
-
-    if door == "1":
-        print("There is a nice vampire asking you if you enjoy life.")
-        print("What do you do?")
-        print("1. Smile and nod")
-        print("2. Scream and run")
-
-        vampire = input("> ")
-
-        if vampire == "1":
-            print(f"Congratulations {name}, you found a new friend!")
-        elif vampire == "2":
-            print(f"Sorry {name}, the vampire is faster. You become a dinner.")
-        else:
-            # Exercise B
-
-    # Your code from Task 1 should be here
-
-    else:
-        wrong_input()
-
-    # Your code from Exercise C on Task 2 should be here
+    wrong_input("1, 2") # this could print: "Sorry but the only valid options are: 1,2. Try again please"
 
 
 4. Loops and Lists
 ==================
 
-A) Create a list variable named `friends` that contains names of the user friends.
+Continue in your file from the previous exercise or use the solution from the previous exercise
+as a base for this exercise.
 
-B) When a user enters some room, print a message saying that her 2nd friend in the list is in the room. Remember: Access list elements like this, eg. friends[0], friends[1]
+A) At the beginning of the file, create a *list* variable named ``friends`` with names of the user's friends.
 
-C) Make this name to be chosen randomly. Import Python library random, that has functions to help with random numbers and use random.randint(a, b) function to give you a random number between a and b. eg. random.randint(1,4) will give a random number among 1, 2, 3, 4.
+.. code-block:: python
 
-D) Extend your death function (from functions task before) telling the user that is falling from high:
-    Eg. print:
+    # Remember defining a list variable looks like that:
+    my_var = ['zero_element', 'first_element']
+
+B) When a user enters some room, print a message saying that her 2nd friend in the list is in the room (print the name
+   of the friend from the variable ``friends``).
+
+::
+
+    # Remember: Access list elements like this eg. friends[0], friends[1]
+
+C) Make this name to be chosen randomly. At the first line of the file, import Python library called ``random``.
+   This library has functions to help with random numbers and use ``random.randint(a, b)`` function to give you a
+   random number between a and b. eg. ``random.randint(1, 4)`` will return a random number between 1-4, so one of
+   1, 2, 3, 4. Use this function to choose a random name from the names list.
+
+.. code-block:: python
+
+    # Remember: import statement looks like this:
+    import that_awesome_library_name
+
+
+5. Loops, Range, Function
+=========================
+
+Continue in your file from the previous exercise or use the solution from the previous exercise
+as a base for this exercise.
+
+A) Now think a bit, how would you write a ``dead`` function using an argument called ``death_message``? This
+   function could be called in every point that they user dies eg. when the user becomes a dinner for the
+   vampire. To figure out where this function should be added, check the structure of a typical python file:
+
+.. _file_structure:
+
+::
+
+    # import statements
+
+    # function definitions
+
+    # global variables (variable outside functions)
+
+    # code outside of a function
+
+B) Extend your ``dead`` function telling the user that is falling from high. Make the function print:
 
 ::
 
@@ -166,65 +172,30 @@ D) Extend your death function (from functions task before) telling the user that
 
     3
 
-    ...
+    ...  # with all the numbers in between
 
     30
-
-    ...
 
     meters!
 
     You are dead!"
 
 
-Try to print all the numbers up to 30 or 50 with a for loop using range function, eg. range(30) will return some kind of list with numbers from 0-29.
+Print all the numbers up to 30 or 50 with a ``for`` loop using ``range`` function. For example ``range(30)`` will
+return some kind of list with numbers from 0-29.
 
-E) Add a delay between the falling with time.sleep(secs), Eg. time.sleep(1) will pause the program for 1 sec. Remember to add import for time library typing `import time` in the beginning of the code.
+C) Add a delay while falling in each step with ``time.sleep(secs)`, Eg. ``time.sleep(1)`` will pause
+   the program for 1 sec. Remember to add import for time library with ``import time`` before it is used (see file_structure_).
 
-.. code-block:: python
-
-    # Exercise C the import goes here
-
-    # Exercise A
-    # friends =
-
-    print()
-
-    print("Do you go through door 1 or door 2?")
-
-    door = input("> ")
-
-    if door == "1":
-        # Exercise B, C
-        print("There is a nice vampire asking you if you enjoy life.")
-        print("What do you do?")
-        print("1. Smile and nod")
-        print("2. Scream and run")
-
-        vampire = input("> ")
-
-        if vampire == "1":
-            print(f"Congratulations {name}, you found a new friend!")
-        elif vampire == "2":
-            print(f"Sorry {name}, the vampire is faster. You become a dinner.")
-        else:
-            # Your code from Task 3 should be here
-
-    # Your code from Task 1 should be here
-
-    else:
-        wrong_input()
-
-    # Your code from Task 2 should be here
-
-
-5. Dictionaries
+6. Dictionaries
 ===============
 
 Dictionaries are super useful python data structures and if you are dealing with data, like
 wikipedia data, questionaire data, or anything you can imagine, dictionaries will prove useful.
 
-A) Let's use a dictionary to describe each room. Create a dictionary variable called door_greetings with keys the door numbers and values the door greeting. eg. door_greetings = {'1': "Welcome to the paradise"}.
+A) Let's use a dictionary to describe each room. Create a dictionary
+   variable called door_greetings with keys the door numbers and values the door greeting. eg. door_greetings = {'1': "Welcome to the paradise"}.
+
 B) When the user enters each room print the corresponding door greeting from the dictionary.
 
 .. code-block:: python
@@ -262,7 +233,7 @@ B) When the user enters each room print the corresponding door greeting from the
     # Your code from Task 2 should be here
 
 
-6. More functions, 'cause functions are fun!
+7. More functions, 'cause functions are fun!
 ============================================
 
 Practice more functions. Use the code below.
@@ -311,7 +282,7 @@ A) Get creative write a function your_room. Check where it is called in the room
     start()
 
 
-7. More dictionaries for the adventurous ones!
+8. More dictionaries for the adventurous ones!
 ==============================================
 
 Use the dictionary adventure below to control the game play instead of if-else statements.
