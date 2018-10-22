@@ -337,7 +337,7 @@ A) Take some time to understand the structure of the dictionary adventure in the
    This value can be passed directly into a print statement.
 
 B) Exactly after the print of the greeting print the possible actions for each option of the chosen door.
-    eg:
+   eg:
 
 ::
 
@@ -346,10 +346,10 @@ B) Exactly after the print of the greeting print the possible actions for each o
     2. Scream and run
 
 
-    Tips:
-        * Accessing the action of the first option of the first door can be done with  ``adventure['1']['options'][0]['action']``
-        * For loop is needed to go through the list of options.
-        * To show the number of each option python enumerate function can be useful, http://book.pythontips.com/en/latest/enumerate.html
+Tips:
+    * Accessing the action of the first option of the first door can be done with  ``adventure['1']['options'][0]['action']``
+    * For loop is needed to go through the list of options.
+    * To show the number of each option python enumerate function can be useful, http://book.pythontips.com/en/latest/enumerate.html
 
 C) Add more options to door ``'1'``.
 
