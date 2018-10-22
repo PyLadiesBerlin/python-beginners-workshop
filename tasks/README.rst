@@ -191,41 +191,30 @@ C) Add a delay while falling in each step with ``time.sleep(secs)`, Eg. ``time.s
 ===============
 
 Dictionaries are super useful python data structures and if you are dealing with data, like
-wikipedia data, questionaire data, or anything you can imagine, dictionaries will prove useful.
+wikipedia data, questionnaire data, or anything you can imagine, dictionaries will prove useful.
 
-A) Let's use a dictionary to describe each room. Create a dictionary
-   variable called door_greetings with keys the door numbers and values the door greeting. eg. door_greetings = {'1': "Welcome to the paradise"}.
+Continue in your file from the previous exercise or use the solution from the previous exercise
+as a base for this exercise.
 
-B) When the user enters each room print the corresponding door greeting from the dictionary.
+A) Let's use a dictionary to describe each room greeting. Create a dictionary
+   variable called ``door_greetings`` with keys the door numbers and values
+   the door greeting. It could look like:
 
 .. code-block:: python
 
-    # Exercise A
-    # door_greetings =
+   door_greetings = {'1': "Welcome to the paradise"}
 
-    print()
+::
 
-    print("Do you go through door 1 or door 2?")
+Tip: Define the variable together with other global variables (see file_structure_).
 
-    door = input("> ")
+B) When the user enters each room print the corresponding door greeting from the
+   dictionary. Use the ``door`` variable to show the correct message.
 
-    if door == "1":
-        # Exercise B - print room greeting
-        print("There is a nice vampire asking you if you enjoy life.")
-        print("What do you do?")
-        print("1. Smile and nod")
-        print("2. Scream and run")
 
-        vampire = input("> ")
 
-        if vampire == "1":
-            print(f"Congratulations {name}, you found a new friend!")
-        elif vampire == "2":
-            print(f"Sorry {name}, the vampire is faster. You become a dinner.")
-        else:
-            # Your code from Task 3 should be here
 
-    # Your code from Task 1 should be here
+
 
     else:
         wrong_input()
@@ -236,13 +225,14 @@ B) When the user enters each room print the corresponding door greeting from the
 7. More functions, 'cause functions are fun!
 ============================================
 
-Practice more functions. Use the code below.
+Practice more functions. Make a new file and use the code below. The code is not valid
+because the used ``your_room`` function is not yet defined.
 
-A) Get creative write a function your_room. Check where it is called in the room.
+A) Get creative, write a function ``your_room``. Check where it is called in the room.
 
 .. code-block:: python
 
-    from sys import exit
+    from sys import exit  # exit builtin function is used to terminate the program
 
     # start room
     def start():
@@ -252,7 +242,7 @@ A) Get creative write a function your_room. Check where it is called in the room
         if choice == "left":
             bank_room()
         elif choice == "right":
-            your_room()
+            your_room()  # you need to create the function your_room
         else:
             dead("You stumble around the room until you starve.")
 
@@ -272,11 +262,8 @@ A) Get creative write a function your_room. Check where it is called in the room
         else:
             dead("Man, learn to type a number.")
 
-
-    # Exercise A
-
-    def dead(why):
-        print(why, "You are dead.")
+    def dead(message):
+        print(message, "You are dead.")
         exit(0)
 
     start()
@@ -287,23 +274,45 @@ A) Get creative write a function your_room. Check where it is called in the room
 
 Use the dictionary adventure below to control the game play instead of if-else statements.
 
-This task combines for-loops, complex dictionaries and lists. It is recommended after the
-concepts of loops and dictionaries and lists are pretty well understood.
+The values of a dictionary can be dictionaries as well, that have values lists with elements that
+can be lists or dictionaries as well. This  can lead to a pretty complicated data structure. For example
 
-In the code below there a complex dictionary named `adventure` that has as values dictionaries as well.
-This complex dictionary includes all the text needed to play the game. The value of a door eg door '1' is
-also a dictionary, with keys "greeting" that is the text to show when the user enters the room and
-"options" which is a list of dictionaries with the "action" to display and then the "result" to show to the
+.. code-block:: python
+
+    map = {
+        'sea': [
+            {'boat1': ['maria', 'elena', 'stella']},
+            {'boat2': ['jose', 'jes', 'katya']}],
+        'shore': [
+            {'building1': ['irina', 'fei', 'persa']}
+        ]
+    }
+
+
+The code above is a representation of  ``map``, with keys ``sea`` and ``shore``. Each of
+these keys have as values lists. The value of ``sea`` is
+``[{'boat1': ['maria', 'elena', 'stella']}, {'boat2': ['jose', 'jes', 'katya']}]`` which is a list
+with 2 dictionary elements, each one is a dictionary with key the boat name and value the passengers.
+To print eg the passengers of ``boat2`` one shall do ``print(map['sea'][0]['boat2'])``
+
+We will use such a complex dictionary to control the adventure game. Create a new file and type the code below.
+The variable dictionary ``adventure`` that has as values dictionaries as well, includes all the text
+needed to play the game. The value of a door eg door '1' is
+also a dictionary, with keys ``'greeting'`` that is the text to show when the user enters the room and
+``"options"`` which is a list of dictionaries with the "action" to display and then the "result" to show to the
 user when they choose this option. Currently only the door 1 is defined.
 
 
-A) Take some time to understand the structure of the dictionary adventure in the code below. Copy this code to a new file and continue the program in the indicated line and print the greeting of the chosen door, using the value from the dictionary.
-    Eg. the greeting of the door '1' can be accessed with adventure['1']['greeting'] or if the door number is in a variable called door, adventure[door]['greeting'] will get the greeting for the variable door from the dictionary. This value can be passed directly into a print statement.
+A) Take some time to understand the structure of the dictionary adventure in the code below. Copy this code to a new file and continue the
+   program in the indicated line and print the greeting of the chosen door, using the value from the dictionary.
+   Eg. the greeting of the door '1' can be accessed with ``adventure['1']['greeting']`` or if the door number is in a variable
+   called door, ``adventure[door]['greeting']`` will get the greeting for the variable door from the dictionary.
+   This value can be passed directly into a print statement.
 
 B) Exactly after the print of the greeting print the possible actions for each option of the chosen door.
     eg:
 
-    Options:
+::
 
     1. Smile and node
 
@@ -311,31 +320,34 @@ B) Exactly after the print of the greeting print the possible actions for each o
 
 
     Tips:
-        * Accessing the action of the first option of the first door can be done with adventure['1']['options'][0]['action']
+        * Accessing the action of the first option of the first door can be done with  ``adventure['1']['options'][0]['action']``
         * For loop is needed to go through the list of options.
         * To show the number of each option python enumerate function can be useful, http://book.pythontips.com/en/latest/enumerate.html
 
-C) Add more options to door '1'.
+C) Add more options to door ``'1'``.
 
-D) Add more doors to adventure dictionary. Tip: Copy paste the structure of door '1' and change the values.
+D) Add more doors to the ``adventure`` dictionary.
 
-E) If the chosen door is not available in adventure show a message. Tip to check if a value is one of the dictionary keys, the "in" or the "not in" can be used.
-    eg. if door in adventure.
+    Tip: Copy paste the structure of door '1' and change the values to avoid missing commas and parenthesis, but remember to
+    add a comma before your new values.
+
+E) If the chosen door is not available in adventure show a message. Tip to check if a value is one of the dictionary keys, the ``"in"`` or the ``"not in"`` can be used.
+   eg. ``if door in adventure``.
 
 
 .. code-block:: python
 
     adventure = {
         '1': {
-            "greeting": "There is a nice vampire asking you if you enjoy life. What do you do?",
-            "options": [
+            'greeting': 'There is a nice vampire asking you if you enjoy life. What do you do?',
+            'options': [
                 {
-                    "action": "Smile and nod",
-                    "result": "Congratulations, you found a new friend!"
+                    'action': 'Smile and nod',
+                    'result': 'Congratulations, you found a new friend!'
                 },
                 {
-                    "action": "Scream and run",
-                    "result": "Sorry the vampire is faster, you are dead!"
+                    'action': 'Scream and run',
+                    'result': 'Sorry the vampire is faster, you are dead!'
                 },
                 # Exercise C
             ]
