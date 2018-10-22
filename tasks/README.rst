@@ -151,6 +151,7 @@ A) Now think a bit, how would you write a ``dead`` function using an argument ca
 .. _file_structure:
 
 ::
+    # Common Python file structure
 
     # import statements
 
@@ -211,18 +212,44 @@ Tip: Define the variable together with other global variables (see file_structur
 B) When the user enters each room print the corresponding door greeting from the
    dictionary. Use the ``door`` variable to show the correct message.
 
+7. While the user types crap keep asking
+========================================
+
+So far in the game when the user types something that is not correct, the program continues
+giving a message. What if we want that the program keeps asking until the user types
+something useful? Then the code should be executed again. For example if we would be asking
+
+Example ``Invalid message``:
 
 
+.. code-block:: python
 
 
+    number = input('Choose a door (1/2):')
 
-    else:
-        wrong_input()
+    if number != '1' and number != '2':
+        print('Only 1 or 2 is valid!!!!')
 
-    # Your code from Task 2 should be here
+The the code could be repeated with a `while` loop. Any command inside while (indented
+under while) would be repeated while the condition is valid. Eg.
+
+Example ``while``:
 
 
-7. More functions, 'cause functions are fun!
+.. code-block:: python
+
+    number = 0
+    while number != 'n':
+        number = input('Do you want me to ask you again (y/n)?')
+
+A) In a new file type the code from the example ``Invalid message`` above and make it repeat
+   until the user types a valid option.
+
+B) Now that you practiced a bit ``while``, use it in the main adventure file. Continue in your file from the previous exercise or use the solution from the previous exercise
+   as a base for this exercise. Make the program keep asking for a valid door while the user types wrong things.
+
+
+8. More functions, 'cause functions are fun!
 ============================================
 
 Practice more functions. Make a new file and use the code below. The code is not valid
@@ -269,7 +296,7 @@ A) Get creative, write a function ``your_room``. Check where it is called in the
     start()
 
 
-8. More dictionaries for the adventurous ones!
+9. More dictionaries for the adventurous ones!
 ==============================================
 
 Use the dictionary adventure below to control the game play instead of if-else statements.
