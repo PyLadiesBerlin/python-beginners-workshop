@@ -198,8 +198,8 @@ Continue in your file from the previous exercise or use the solution from the pr
 as a base for this exercise.
 
 A) Let's use a dictionary to describe each room greeting. Create a dictionary
-   variable called ``door_greetings`` with keys the door numbers and values
-   the door greeting. It could look like:
+   variable called ``door_greetings`` with keys being the door numbers and values
+   being the door greeting. It could look like:
 
 .. code-block:: python
 
@@ -209,15 +209,16 @@ A) Let's use a dictionary to describe each room greeting. Create a dictionary
 
 Tip: Define the variable together with other global variables (see file_structure_).
 
-B) When the user enters each room print the corresponding door greeting from the
+B) In each room the user enters, print the corresponding door greeting from the
    dictionary. Use the ``door`` variable to show the correct message.
 
 7. While the user types crap keep asking
 ========================================
 
 So far in the game when the user types something that is not correct, the program continues
-giving a message. What if we want that the program keeps asking until the user types
-something useful? Then the code should be executed again. For example if we would be asking
+giving a message. What if we want the program to keep asking until the user types
+something useful? Then the code should be executed again. Given the example where the
+program expects only two possible answers:
 
 Example ``Invalid message``:
 
@@ -230,8 +231,8 @@ Example ``Invalid message``:
     if number != '1' and number != '2':
         print('Only 1 or 2 is valid!!!!')
 
-The the code could be repeated with a `while` loop. Any command inside while (indented
-under while) would be repeated while the condition is valid. Eg.
+The code could be repeated with a `while` loop. Any command inside while (indented
+under while) would be repeated while the condition is valid.
 
 Example ``while``:
 
@@ -246,7 +247,7 @@ A) In a new file type the code from the example ``Invalid message`` above and ma
    until the user types a valid option.
 
 B) Now that you practiced a bit ``while``, use it in the main adventure file. Continue in your file from the previous exercise or use the solution from the previous exercise
-   as a base for this exercise. Make the program keep asking for a valid door while the user types wrong things.
+   as a base for this exercise. Make the program keep asking for a valid door while the user doesn't give an acceptable answer.
 
 
 8. More functions, 'cause functions are fun!
@@ -302,7 +303,7 @@ A) Get creative, write a function ``your_room``. Check where it is called in the
 Use the dictionary adventure below to control the game play instead of if-else statements.
 
 The values of a dictionary can be dictionaries as well, that have values lists with elements that
-can be lists or dictionaries as well. This  can lead to a pretty complicated data structure. For example
+can be lists or dictionaries as well. This can lead to a pretty complicated data structure. For example:
 
 .. code-block:: python
 
@@ -316,16 +317,16 @@ can be lists or dictionaries as well. This  can lead to a pretty complicated dat
     }
 
 
-The code above is a representation of  ``map``, with keys ``sea`` and ``shore``. Each of
+The code above is a representation of  ``map``, with the keys ``sea`` and ``shore``. Each of
 these keys have as values lists. The value of ``sea`` is
 ``[{'boat1': ['maria', 'elena', 'stella']}, {'boat2': ['jose', 'jes', 'katya']}]`` which is a list
-with 2 dictionary elements, each one is a dictionary with key the boat name and value the passengers.
-To print eg the passengers of ``boat2`` one shall do ``print(map['sea'][0]['boat2'])``
+with 2 dictionary elements, each one is a dictionary with the key being the boat name and the value being the passengers.
+To print eg the passengers of ``boat2`` one shall do ``print(map['sea'][0]['boat2'])``.
 
 We will use such a complex dictionary to control the adventure game. Create a new file and type the code below.
-The variable dictionary ``adventure`` that has as values dictionaries as well, includes all the text
-needed to play the game. The value of a door eg door '1' is
-also a dictionary, with keys ``'greeting'`` that is the text to show when the user enters the room and
+The dictionary ``adventure`` that has as values dictionaries as well, includes all the text
+needed to play the game. The value of a door, eg door '1', is
+also a dictionary, with key ``'greeting'`` which is the text to show when the user enters the room and
 ``"options"`` which is a list of dictionaries with the "action" to display and then the "result" to show to the
 user when they choose this option. Currently only the door 1 is defined.
 
@@ -336,7 +337,7 @@ A) Take some time to understand the structure of the dictionary adventure in the
    called door, ``adventure[door]['greeting']`` will get the greeting for the variable door from the dictionary.
    This value can be passed directly into a print statement.
 
-B) Exactly after the print of the greeting print the possible actions for each option of the chosen door.
+B) Exactly after the print of the greeting, print the possible actions for each option of the chosen door.
    eg:
 
 ::
@@ -348,8 +349,8 @@ B) Exactly after the print of the greeting print the possible actions for each o
 
 Tips:
     * Accessing the action of the first option of the first door can be done with  ``adventure['1']['options'][0]['action']``
-    * For loop is needed to go through the list of options.
-    * To show the number of each option python enumerate function can be useful, http://book.pythontips.com/en/latest/enumerate.html
+    * ``for`` loop is needed to go through the list of options.
+    * To show the number of each option python ``enumerate`` function can be useful, http://book.pythontips.com/en/latest/enumerate.html
 
 C) Add more options to door ``'1'``.
 
@@ -358,7 +359,7 @@ D) Add more doors to the ``adventure`` dictionary.
     Tip: Copy paste the structure of door '1' and change the values to avoid missing commas and parenthesis, but remember to
     add a comma before your new values.
 
-E) If the chosen door is not available in adventure show a message. Tip to check if a value is one of the dictionary keys, the ``"in"`` or the ``"not in"`` can be used.
+E) If the chosen door is not available in adventure, show a message. Tip to check if a value is one of the dictionary keys, the ``"in"`` or the ``"not in"`` can be used.
    eg. ``if door in adventure``.
 
 
