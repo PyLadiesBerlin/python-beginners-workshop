@@ -53,6 +53,8 @@ C) Get creative! Right after the inline comments, add a second door using the el
     else:
         print("You are not so good with numbers, are you?")
 
+See possible solution :ref:`here </adventure_solutions/task_1_if_else.py>`.
+
 
 2. Variables
 ============
@@ -81,9 +83,10 @@ C) Customize the replies to the various doors and questions to show the
         print(f"Congratulations {name}, you found a new friend!")
 
 
-
 D) Time to get creative! Ask one more question to the player and use their answer. It can be either
    inside a door, or after the doors a totally separate question in the end of the file.
+
+See possible solution :ref:`here </adventure_solutions/task_2_variables.py>`.
 
 
 3. Functions
@@ -104,7 +107,9 @@ C) Change your function to receive an argument called ``valid``.
 
 .. code-block:: python
 
-    wrong_input("1, 2") # this could print: "Sorry but the only valid options are: 1,2. Try again please"
+    wrong_input("1, 2") # this could print: "Sorry but the only valid options are: 1, 2."
+
+See possible solution :ref:`here </adventure_solutions/task_3_functions.py>`.
 
 
 4. Loops and Lists
