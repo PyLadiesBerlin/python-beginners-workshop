@@ -55,7 +55,6 @@ C) Get creative! Right after the inline comments, add a second door using
         print("You are not so good with numbers, are you?")
 
 See possible solution in `Task 01 - If, Else`_.
-
 .. _Task 01 - If, Else: adventure_solutions/task_1_if_else.py
 
 
@@ -90,7 +89,6 @@ D) Time to get creative! Ask one more question to the player and use their
    separate question in the end of the file.
 
 See possible solution in `Task 02 - Variables`_.
-
 .. _Task 02 - Variables: adventure_solutions/task_2_variables.py
 
 
@@ -117,7 +115,6 @@ C) Change your function to receive an argument called ``valid``.
                         # "Sorry but the only valid options are: 1, 2."
 
 See possible solution in `Task 03 - Functions`_.
-
 .. _Task 03 - Functions: adventure_solutions/task_3_functions.py
 
 
@@ -156,7 +153,6 @@ C) Make this name be chosen randomly. At the first line of the file, import
     import that_awesome_library_name
 
 See possible solution in `Task 04 - Loops and Lists`_.
-
 .. _Task 04 - Loops and Lists: adventure_solutions/task_4_loops_lists.py
 
 
@@ -216,7 +212,6 @@ C) Add a delay while falling in each step with ``time.sleep(secs)`, Eg.
    for time library with ``import time`` before it is used (see file_structure_).
 
 See possible solution in `Task 05 - Loop, Range, Function`_.
-
 .. _Task 05 - Loop, Range, Function: adventure_solutions/task_5_loop_range_function.py
 
 
@@ -247,7 +242,6 @@ B) In each room the user enters, print the corresponding door greeting from the
    dictionary. Use the ``door`` variable to show the correct message.
 
 See possible solution in `Task 06 - Dictionaries`_.
-
 .. _Task 06 - Dictionaries: adventure_solutions/task_6_dictionaries.py
 
 
@@ -287,6 +281,9 @@ B) Now that you practiced a bit ``while``, use it in the main adventure file.
    Continue in your file from the previous exercise or use the solution from the
    previous exercise as a basis for this exercise. Make the program keep asking
    for a valid door while the user doesn't give an acceptable answer.
+
+See possible solution in `Task 07 - While`_.
+.. _Task 07 - While: adventure_solutions/task_7_while.py
 
 
 8. More functions, 'cause functions are fun!
