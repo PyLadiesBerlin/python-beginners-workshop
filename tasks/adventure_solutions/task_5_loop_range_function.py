@@ -1,0 +1,69 @@
+import random
+import time
+
+def wrong_input(valid):
+    print(f"Sorry but the only valid options are: {valid}.")
+
+# create `dead` function with `death_message` argument
+def dead(death_message):
+    print(f"Sorry {name}, {death_message}.")
+    print("You're falling for...")
+
+    # print numbers slowly
+    for number in range(1,11):
+        print(number)
+        time.sleep(1)
+
+    print("meters!")
+    print("You are dead!")
+
+
+friends = ['Emily', 'Aurora', 'Jack', 'Daniel', 'Meghan']
+
+print()
+name = input("What is your name? ")
+print(f"Welcome to the dungeon, {name}!")
+
+print("Do you go through door 1 or door 2?")
+door = input("> ")
+
+if door == "1":
+    print(f"Look who's here! Your friend {friends[random.randint(0,4)]}!")
+
+    print("There is a nice vampire asking you if you enjoy life.")
+    print("What do you do?")
+    print("1. Smile and nod")
+    print("2. Scream and run")
+
+    vampire = input("> ")
+
+    if vampire == "1":
+        print(f"Congratulations {name}, you found a new friend!")
+    elif vampire == "2":
+        dead("the vampire is faster")
+    else:
+        wrong_input("1, 2")
+
+elif door == "2":
+    print(f"Look who's here! Your friend {friends[random.randint(0,4)]}!")
+
+    print("You found a room full of coffins.")
+    print("What do you do?")
+    print("1. Get through them to another door without touching anything.")
+    print("2. Explore the room, open a coffin.")
+
+    coffin = input("> ")
+
+    if coffin == "1":
+        print(f"Congratulations {name}, you're still alive!")
+    elif coffin == "2":
+        dead("vampires don't like outsiders messing their beds")
+    else:
+        wrong_input("1, 2")
+
+else:
+    wrong_input("1, 2")
+
+print()
+bye = input("Say 'Good bye' in a language other than English: ")
+print(f"{bye}, {name}!")

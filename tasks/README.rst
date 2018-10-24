@@ -61,7 +61,7 @@ See possible solution in :doc:`<adventure_solutions/task_1_if_else.py>`.
 ============
 
 Continue in your file from the previous exercise or use the solution from the
-previous exercise as a base for this exercise. Now that you created a new door
+previous exercise as a basis for this exercise. Now that you created a new door
 for your player to choose from, let's personalize the game a little bit. Write
 the answer to each exercise under its related inline comment.
 
@@ -94,7 +94,7 @@ See possible solution in :doc:`<adventure_solutions/task_2_variables.py>`.
 ============
 
 Continue in your file from the previous exercise or use the solution from the
-previous exercise as a base for this exercise.
+previous exercise as a basis for this exercise.
 
 A) Create a function in the begging of your file that prints and alerts of wrong
    input (something to substitute the answer of the else).
@@ -119,7 +119,7 @@ See possible solution in :doc:`<adventure_solutions/task_3_functions.py>`
 ==================
 
 Continue in your file from the previous exercise or use the solution from the
-previous exercise as a base for this exercise.
+previous exercise as a basis for this exercise.
 
 A) At the beginning of the file, create a *list* variable named ``friends`` with
    names of the user's friends.
@@ -137,7 +137,7 @@ B) When a user enters some room, print a message saying that her 2nd friend in
 
     # Remember: Access list elements like this eg. friends[0], friends[1]
 
-C) Make this name to be chosen randomly. At the first line of the file, import
+C) Make this name be chosen randomly. At the first line of the file, import
    Python library called ``random``. This library has functions to help with
    random numbers and use ``random.randint(a, b)`` function to give you a random
    number between a and b. eg. ``random.randint(1, 4)`` will return a random
@@ -149,12 +149,14 @@ C) Make this name to be chosen randomly. At the first line of the file, import
     # Remember: import statement looks like this:
     import that_awesome_library_name
 
+See possible solution in :doc:`<adventure_solutions/task_4_loops_lists.py>`
+
 
 5. Loops, Range, Function
 =========================
 
 Continue in your file from the previous exercise or use the solution from the
-previous exercise as a base for this exercise.
+previous exercise as a basis for this exercise.
 
 A) Now think a bit, how would you write a ``dead`` function using an argument
    called ``death_message``? This function could be called in every point that
@@ -197,7 +199,7 @@ B) Extend your ``dead`` function telling the user that is falling from high.
     You are dead!"
 
 
-Print all the numbers up to 30 or 50 with a ``for`` loop using ``range``
+Print all the numbers up to 10 or 30 with a ``for`` loop using ``range``
 function. For example ``range(30)`` will return some kind of list with numbers
 from 0-29.
 
@@ -205,15 +207,18 @@ C) Add a delay while falling in each step with ``time.sleep(secs)`, Eg.
    ``time.sleep(1)`` will pause the program for 1 sec. Remember to add import
    for time library with ``import time`` before it is used (see file_structure_).
 
+See possible solution in :doc:`<adventure_solutions/task_5_loop_range_function.py>`.
+
+
 6. Dictionaries
 ===============
 
-Dictionaries are super useful python data structures and if you are dealing with
-data, like wikipedia data, questionnaire data, or anything you can imagine,
-dictionaries will prove useful.
+Dictionaries are super useful python data structures. When dealing with data,
+like wikipedia data, questionnaire data, or anything you can imagine,
+dictionaries will prove themselves quite useful.
 
 Continue in your file from the previous exercise or use the solution from the
-previous exercise as a base for this exercise.
+previous exercise as a basis for this exercise.
 
 A) Let's use a dictionary to describe each room greeting. Create a dictionary
    variable called ``door_greetings`` with keys being the door numbers and
@@ -221,15 +226,18 @@ A) Let's use a dictionary to describe each room greeting. Create a dictionary
 
 .. code-block:: python
 
-   door_greetings = {'1': "Welcome to the paradise"}
+   door_greetings = {'1': "Welcome to paradise!"}
 
 ::
 
 Tip:
-Define the variable together with other global variables (see file_structure_).
+Define the variable near other global variables (see file_structure_).
 
 B) In each room the user enters, print the corresponding door greeting from the
    dictionary. Use the ``door`` variable to show the correct message.
+
+See possible solution in :doc:`<adventure_solutions/task_6_dictionaries.py>`.
+
 
 7. While the user types crap keep asking
 ========================================
@@ -265,8 +273,10 @@ A) In a new file type the code from the example ``Invalid message`` above and
 
 B) Now that you practiced a bit ``while``, use it in the main adventure file.
    Continue in your file from the previous exercise or use the solution from the
-   previous exercise as a base for this exercise. Make the program keep asking
+   previous exercise as a basis for this exercise. Make the program keep asking
    for a valid door while the user doesn't give an acceptable answer.
+
+See possible solution in :doc:`<adventure_solutions/task_7_while.py>`.
 
 
 8. More functions, 'cause functions are fun!
