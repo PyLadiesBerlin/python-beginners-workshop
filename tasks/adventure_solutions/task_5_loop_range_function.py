@@ -12,7 +12,7 @@ def dead(death_message):
     # print numbers slowly
     for number in range(1,11):
         print(number)
-        time.sleep(1)
+        time.sleep(0.3)
 
     print("meters!")
     print("You are dead!")
