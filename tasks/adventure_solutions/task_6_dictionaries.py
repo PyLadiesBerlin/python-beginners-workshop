@@ -34,17 +34,17 @@ if door == "1":
 
     print("There is a nice vampire asking you if you enjoy life.")
     print("What do you do?")
-    print("1. Smile and nod")
-    print("2. Scream and run")
+    print("A. Smile and nod")
+    print("B. Scream and run")
 
     vampire = input("> ")
 
-    if vampire == "1":
+    if vampire == "A":
         print(f"Congratulations {name}, you found a new friend!")
-    elif vampire == "2":
+    elif vampire == "B":
         dead("the vampire is faster")
     else:
-        wrong_input("1, 2")
+        wrong_input("A, B")
 
 elif door == "2":
     print(f"{door_greetings[door]}") # print greeting based on dictionary
@@ -52,17 +52,17 @@ elif door == "2":
 
     print("You found a room full of coffins.")
     print("What do you do?")
-    print("1. Get through them to another door without touching anything.")
-    print("2. Explore the room, open a coffin.")
+    print("A. Get through them to another door without touching anything.")
+    print("B. Explore the room, open a coffin.")
 
     coffin = input("> ")
 
-    if coffin == "1":
+    if coffin == "A":
         print(f"Congratulations {name}, you're still alive!")
-    elif coffin == "2":
+    elif coffin == "B":
         dead("vampires don't like outsiders messing their beds")
     else:
-        wrong_input("1, 2")
+        wrong_input("A, B")
 
 else:
     wrong_input("1, 2")
