@@ -33,7 +33,8 @@ if door == "1":
 
 elif door == "2":
     # print name randomly chosen from list
-    print(f"Look who's here! Your friend {friends[random.randint(0,4)]}!")
+    rand_int = random.randint(0,4)  # store the random number in a variable
+    print(f"Look who's here! Your friend {friends[rand_int]}!") # use variable to print item from the dictionary
 
     print("You found a room full of coffins.")
     print("What do you do?")
