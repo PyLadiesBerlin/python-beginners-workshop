@@ -32,7 +32,7 @@ elif door == "2":
         print("Congratulations, you're still alive!")
     elif coffin == "2":
         print("One of the vampires arrived and didn't like to see you messing"
-              " his bed. You're not going to see the light again, sorry.")
+              " her bed. You're not going to see the light again, sorry.")
     else:
         print("You are not so good with numbers, are you?")
 else:
