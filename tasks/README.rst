@@ -55,6 +55,7 @@ C) Get creative! Right after the inline comments, add a second door using
         print("You are not so good with numbers, are you?")
 
 See possible solution in `task_1_if_else.py`_.
+
 .. _task_1_if_else.py: adventure_solutions/task_1_if_else.py
 
 
@@ -89,6 +90,7 @@ D) Time to get creative! Ask one more question to the player and use their
    separate question in the end of the file.
 
 See possible solution in `task_2_variables.py`_.
+
 .. _task_2_variables.py: adventure_solutions/task_2_variables.py
 
 
@@ -115,6 +117,7 @@ C) Change your function to receive an argument called ``valid``.
                         # "Sorry but the only valid options are: 1, 2."
 
 See possible solution in `task_3_functions.py`_.
+
 .. _task_3_functions.py: adventure_solutions/task_3_functions.py
 
 
@@ -153,6 +156,7 @@ C) Make this name be chosen randomly. At the first line of the file, import
     import that_awesome_library_name
 
 See possible solution in `task_4_loops_lists.py`_.
+
 .. _task_4_loops_lists.py: adventure_solutions/task_4_loops_lists.py
 
 
@@ -212,6 +216,7 @@ C) Add a delay while falling in each step with ``time.sleep(secs)`, Eg.
    for time library with ``import time`` before it is used (see file_structure_).
 
 See possible solution in `task_5_loop_range_function.py`_.
+
 .. _task_5_loop_range_function.py: adventure_solutions/task_5_loop_range_function.py
 
 
@@ -242,6 +247,7 @@ B) In each room the user enters, print the corresponding door greeting from the
    dictionary. Use the ``door`` variable to show the correct message.
 
 See possible solution in `task_6_dictionaries.py`_.
+
 .. _task_6_dictionaries.py: adventure_solutions/task_6_dictionaries.py
 
 
@@ -282,6 +288,7 @@ B) Now that you practiced a bit ``while``, use it in the main adventure file.
    for a valid door while the user doesn't give an acceptable answer.
 
 See possible solution in `task_7_while.py`_.
+
 .. _task_7_while.py: adventure_solutions/task_7_while.py
 
 
@@ -336,6 +343,7 @@ A) Get creative, write a function ``your_room``. Check where it is called in the
 
 
 See possible solution in `task_8_more_functions.py`_.
+
 .. _task_8_more_functions.py: adventure_solutions/task_8_more_functions.py
 
 9. More dictionaries for the adventurous ones!
