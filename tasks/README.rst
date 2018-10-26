@@ -335,6 +335,9 @@ A) Get creative, write a function ``your_room``. Check where it is called in the
     start()
 
 
+See possible solution in `task_8_more_functions.py`_.
+.. _task_8_more_functions.py: adventure_solutions/task_8_more_functions.py
+
 9. More dictionaries for the adventurous ones!
 ==============================================
 
