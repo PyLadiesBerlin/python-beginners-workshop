@@ -10,7 +10,7 @@ def dead(death_message):
 
     for number in range(1,11):
         print(number)
-        time.sleep(1)
+        time.sleep(0.3)
 
     print("meters!")
     print("You are dead!")
@@ -24,18 +24,16 @@ print()
 name = input("What is your name? ")
 print(f"Welcome to the dungeon, {name}!")
 
-print("Do you go through door 1 or door 2?")
-door = input("> ")
-
-while door != "1" and door != "2":
+door = 0
+while door not in ('1', '2'):
     wrong_input("1, 2")
-    print("Let's try again: do you go through door 1 or door 2?")
+    print("Do you go through door 1 or door 2?")
     door = input("> ")
-
 
 if door == "1":
     print(f"{door_greetings[door]}")
-    print(f"Look who's here! Your friend {friends[random.randint(0,4)]} :D")
+    rand_int = random.randint(0,4)
+    print(f"Look who's here! Your friend {friends[rand_int]} :D")
 
     print("There is a nice vampire asking you if you enjoy life.")
     print("What do you do?")
@@ -43,7 +41,11 @@ if door == "1":
     print("B. Scream and run")
 
     vampire = input("> ")
+<<<<<<< Updated upstream
     while vampire not in {"A", "B"}:  #  {"A", "B"} is a python set. Sets are great to check if a value is included
+=======
+    while vampire not in ('A', 'B'):
+>>>>>>> Stashed changes
         wrong_input("A, B")
         print("Let's try again: do you go through door A or door B?")
         vampire = input("> ")
@@ -53,7 +55,7 @@ if door == "1":
     else:
         dead("the vampire is faster")
 
-elif door == "2":
+else:
     print(f"{door_greetings[door]}")
     print(f"Look who's here! Your friend {friends[random.randint(0,4)]}! :D")
 
@@ -63,7 +65,11 @@ elif door == "2":
     print("B. Explore the room, open a coffin.")
 
     coffin = input("> ")
+<<<<<<< Updated upstream
     while coffin not in {"A", "B"}:
+=======
+    while coffin not in ('A', 'B'):
+>>>>>>> Stashed changes
         wrong_input("A, B")
         print("Let's try again: do you go through door A or door B?")
         coffin = input("> ")
@@ -72,9 +78,6 @@ elif door == "2":
         print(f"Congratulations {name}, you're still alive!")
     else:
         dead("vampires don't like outsiders messing their beds")
-
-else:
-    wrong_input("1, 2")
 
 print()
 bye = input("Say 'Good bye' in a language other than English: ")
