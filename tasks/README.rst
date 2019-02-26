@@ -19,6 +19,9 @@ a last resource, there's a file with a possible solution in the end of each task
 1. If/Else
 ==========
 
+
+Resources: `Python first steps <https://python.swaroopch.com/first_steps.html>`_. (``print``, ``input``, ``if``, ``else``, ``==``)
+
 A) Type the following code, save it in a file and try to understand what
    it does.
 
@@ -57,10 +60,15 @@ C) Get creative! Right after the inline comments, add a second door using
 See possible solution in `task_1_if_else.py`_.
 
 .. _task_1_if_else.py: adventure_solutions/task_1_if_else.py
-
+ 
 
 2. Variables
 ============
+
+Resources: Variables_, f-strings_.
+
+.. _Variables: https://www.programiz.com/python-programming/variables-constants-literals
+.. _f-strings: https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python
 
 Continue in your file from the previous exercise or use the solution from the
 previous exercise as a basis for this exercise. Now that you created a new door
@@ -96,6 +104,9 @@ See possible solution in `task_2_variables.py`_.
 
 3. Functions
 ============
+Resources: Functions_.
+
+.. _Functions: https://python.swaroopch.com/functions.html
 
 Continue in your file from the previous exercise or use the solution from the
 previous exercise as a basis for this exercise.
@@ -123,6 +134,10 @@ See possible solution in `task_3_functions.py`_.
 
 4. Loops and Lists
 ==================
+Knowledge requirements: Lists, loops
+Resources: 
+   * https://www.afterhoursprogramming.com/tutorial/python/for-loop-py/
+   * https://www.afterhoursprogramming.com/tutorial/python/lists/
 
 Continue in your file from the previous exercise or use the solution from the
 previous exercise as a basis for this exercise.
