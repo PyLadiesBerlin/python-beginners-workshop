@@ -134,10 +134,10 @@ See possible solution in `task_3_functions.py`_.
 
 4. Loops and Lists
 ==================
-Knowledge requirements: Lists, loops
-Resources: 
-   * https://www.afterhoursprogramming.com/tutorial/python/for-loop-py/
-   * https://www.afterhoursprogramming.com/tutorial/python/lists/
+Resources: Lists_, Loops_.
+ 
+.. _Loops: https://www.afterhoursprogramming.com/tutorial/python/for-loop-py/
+.. _Lists: https://www.afterhoursprogramming.com/tutorial/python/lists/
 
 Continue in your file from the previous exercise or use the solution from the
 previous exercise as a basis for this exercise.
