@@ -17,7 +17,7 @@ if door == "1":
     elif vampire == "B":
         print("Sorry, the vampire is faster. You become a dinner.")
     else:
-        print("You are not so good with numbers, are you?")
+        print("That is not a valid option!")
 
 # New door option using the `elif` statement
 elif door == "2":
@@ -34,6 +34,6 @@ elif door == "2":
         print("One of the vampires arrived and didn't like to see you messing"
               " her bed. You're not going to see the light again, sorry.")
     else:
-        print("You are not so good with numbers, are you?")
+        print("That is not a valid option!")
 else:
-    print("You are not so good with numbers, are you?")
+    print("That is not a valid option!")

@@ -50,12 +50,12 @@ C) Get creative! Right after the inline comments, add a second door using
         elif vampire == "2":
             print("Sorry, the vampire is faster. You become a dinner.")
         else:
-            print("You are not so good with numbers, are you?")
+            print("That is not a valid option!")
 
     # Add code here! Make sure to be indented (vertically aligned) correctly
 
     else:
-        print("You are not so good with numbers, are you?")
+        print("That is not a valid option!")
 
 See possible solution in `task_1_if_else.py`_.
 

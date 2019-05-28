@@ -21,7 +21,7 @@ if door == "1":
     elif vampire == "B":
         print(f"Sorry {name}, the vampire is faster. You become a dinner.") #customized answer
     else:
-        print("You are not so good with numbers, are you?")
+        print("That is not a valid option!")
 
 elif door == "2":
     print("You found a room full of coffins.")
@@ -37,10 +37,10 @@ elif door == "2":
         print("One of the vampires arrived and didn't like to see you messing"
               f" her bed. You're not going to see the light again, sorry {name}.")
     else:
-        print("You are not so good with numbers, are you?")
+        print("That is not a valid option!")
 
 else:
-    print("You are not so good with numbers, are you?")
+    print("That is not a valid option!")
 
 # Asking one more question and using the answer
 print()
