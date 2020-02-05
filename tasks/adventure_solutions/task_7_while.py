@@ -41,11 +41,7 @@ if door == "1":
     print("B. Scream and run")
 
     vampire = input("> ")
-<<<<<<< Updated upstream
     while vampire not in {"A", "B"}:  #  {"A", "B"} is a python set. Sets are great to check if a value is included
-=======
-    while vampire not in ('A', 'B'):
->>>>>>> Stashed changes
         wrong_input("A, B")
         print("Let's try again: do you go through door A or door B?")
         vampire = input("> ")
@@ -55,7 +51,7 @@ if door == "1":
     else:
         dead("the vampire is faster")
 
-else:
+elif door == "2":
     print(f"{door_greetings[door]}")
     print(f"Look who's here! Your friend {friends[random.randint(0,4)]}! :D")
 
@@ -65,11 +61,7 @@ else:
     print("B. Explore the room, open a coffin.")
 
     coffin = input("> ")
-<<<<<<< Updated upstream
     while coffin not in {"A", "B"}:
-=======
-    while coffin not in ('A', 'B'):
->>>>>>> Stashed changes
         wrong_input("A, B")
         print("Let's try again: do you go through door A or door B?")
         coffin = input("> ")
