@@ -26,7 +26,8 @@ print(f"Welcome to the dungeon, {name}!")
 
 door = 0
 while door not in ('1', '2'):
-    wrong_input("1, 2")
+    if door != 0:  # otherwise executes wrong_input before it asks about the door
+        wrong_input("1, 2")
     print("Do you go through door 1 or door 2?")
     door = input("> ")
 
